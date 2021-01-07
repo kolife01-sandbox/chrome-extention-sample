@@ -1,12 +1,9 @@
 {
-  "name": "httpAlert",
+  "name": "MyPage",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Notice alert in not https pages.",
-  "content_scripts": [{
-    "matches": ["http://*/"],
-    "js": [
-      "content.js"
-    ]
-  }]
+  "description": "Overriding Chrome pages.",
+  "chrome_url_overrides" : {
+    "newtab": "myPage.html"
+  }
 }
