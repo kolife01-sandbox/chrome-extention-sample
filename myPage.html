@@ -1,8 +1,33 @@
 <html>
 <style>
-body{background:#000000}
+body {
+  background: #000;
+}
+.video-wrap {
+  position: relative;
+}
+video {
+  display: block;
+  margin: 0 0 0 auto;
+  width: auto;
+}
+p {
+  font-family: serif;
+  color: #fff;
+  font-size: 400%;
+  position: absolute;
+  left: 30%;
+  top: 200px;
+  z-index: 1;
+}
 </style>
 <title>New Tab</title>
 <body>
+  <div class="video-wrap">
+    <p>Camp Life</p>
+    <video src="images/fire.mov" autoplay loop muted>
+    <img src="images/fire.jpg" alt="Placeholder">
+  </video>
+  </div>
 </body>
 </html>
