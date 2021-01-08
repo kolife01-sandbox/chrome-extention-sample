@@ -14,21 +14,6 @@
   <body>
     <button id="black">背景を黒にする!</button>
     <button id="red">背景を赤にする!</button>
-    <script>
-      $("#black").on("click", () => {
-        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-          chrome.tabs.sendMessage(tabs[0].id, {
-            color: "black"
-          });
-        });
-      });
-      $("#red").on("click", () => {
-        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-          chrome.tabs.sendMessage(tabs[0].id, {
-            color: "red"
-          });
-        });
-      });
-    </script>
+    <script src="popup.js"></script>
   </body>
 </html>
